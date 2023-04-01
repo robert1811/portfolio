@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>robert1811 - Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav id="pc-nav">
+            <ul>
+                <li><a href="#introduction"><i class="fa-solid fa-house"></i> Introduction</a></li>
+                <li><a href="#about"></a></li>
+                <li><a href="#tech-stack"><i class="fa-solid fa-desktop"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="mobile-nav">
+            <i class="fa-solid fa-bars" id="menu-icon" onclick="showMenu()"></i>
+            <menu id="mobile-menu">
+                <div id="mobile-menu-title">
+                    <h2>Menu</h2>
+                    <i class="fa-solid fa-xmark" id="close-menu" onclick="closeMenu()"></i>
+                </div>
+                <h2></h2>
+                <ul>
+                    <li><a href="#introduction"><i class="fa-solid fa-house"></i> Introduction</a></li>
+                    <li><a href="#about"></a></li>
+                    <li><a href="#tech-stack"><i class="fa-solid fa-desktop"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h1>Robert1811</h1>
+            <h2><span id="typed-text">Web <b class="green">developer</b></span><span id="typing">I</span></h2>
+            <img class="background" src="intro_background.jpg" alt="">
+        </section>
+        <section style="margin-top: 70px" id="about">
+            <div id="about-wrapper">
+                <div id="about-text">
+                    <h1>Let me introduce myself</h1>
+                    <p>I am a self-taught <span class="green">web developer</span> and high-school student who is interested in learning stuff. I have been learning about web development since the past year (2022), currently I am <span class="green">learning about mobile development</span> with react native too.</p>
+                    <p>My native language is spanish, my hobbies are playing videogames and watching series. My main interests are technology, history and geography.</p>
+                    <p>I want to study software engineering.</p>
+                    <div id="button-container">
+                        <a href="#projects"><button class="btn">My projects</button></a>
+                    </div>
+                </div>
+                <div id="pfp">
+                    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                </div>
+            </div>
+        </section>
+        <section id="tech-stack">
+            <div id="learnt-skills">
+                <h2 style="margin-top: 45px;">Technologies that I mostly use</h2>
+                <div id="frontend-container">
+                    <ul class="tech-wrapper">
+                        <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="javascript" title="Javascript"></li>
+                        <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="typescript" title="Typescript"></li>
+                        <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="react" title="React"></li>
+                        <li><img src="" alt=""></li>
+                        <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt="" title="SASS"></li>
+                        <li><img class="icon" src="https://www.svgrepo.com/show/452228/html-5.svg" alt="html" title="HTML"></li>
+                        <li><img class="icon" src="https://www.svgrepo.com/show/373535/css.svg" alt="css" title="CSS"></li>
+                        <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="nodejs" title="NodeJS"></li>
+                        <li><img class="icon" src="https://www.svgrepo.com/show/373845/mongo.svg" alt="mongodb" title="MongodB"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="tolearn-container">
+                <h2 style="margin-top: 45px;">I would like to learn</h2>
+                <ul class="tech-wrapper">                          
+                    <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="python" title="Python"></li>
+                    <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" alt="cs" title="C#"></li>
+                    <li><img class="icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" alt="php" title="PHP"></li>
+                    <li><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/50px-Laravel.svg.png?20190820171151" alt="laravel" title="Laravel"></li>
+                    <li><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="angular" title="Angular"></li>
+                </ul>
+            </div>
+            <div id="tools-container">
+                <h2 style="margin-top: 45px;">Tools that I use</h2>
+                <ul class="tech-wrapper">
+                    <li><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519" alt="vscode" title="Visual Studio Code"></li>
+                    <li><img class="icon" src="https://www.svgrepo.com/show/354202/postman-icon.svg" alt="postman" title="Postman"></li>
+                    <li><img class="icon" src="https://www.svgrepo.com/show/452210/git.svg" alt="git" title="Git"></li>
+                    <li><img class="icon" src="https://www.svgrepo.com/show/361653/vercel-logo.svg" alt="vercel" title="Vercel"></li>
+                </ul>
+            </div>
+        </section>
+        <section style="margin-top: 70px" id="projects">
+            <h2>My <span class="green">projects</span></h2>
+            <ul id="projects-container">
+                <li class="project-container">
+                    <div class="project-header">
+                        <img src="./images/life_simulator.jpg" alt="">
+                        <h3>Life simulator</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>A life simulator game inspired by bitlife. Made with vanillaJS for browsers.</p>
+                        <div class="btn-container">
+                            <a target="_blank" href="https://github.com/robert1811/life-simulator"><button class="btn project-btn"><div class="fa-brands fa-github green"></div> Github</button></a>
+                            <a target="_blank" href="https://robert1811.github.io/life-simulator/"><button class="btn project-btn"><i class="fa-solid fa-desktop green"></i> Demo</button></a> 
+                        </div>
+                </li>
+                <li class="project-container">
+                    <div class="project-header">
+                        <img src="images/steam_api.jpg" alt="">
+                        <h3>Steam cards finder</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Website made for an API which returns games with profitable steam trade cards. The API is not made by me.</p>
+                        <div class="btn-container">
+                            <a href="https://github.com/robert1811/steam-cards-finder-webpage" target="_blank"><button class="btn project-btn"><i class="fa-brands fa-github green"></i> Github</button></a>
+                            <a href="#" onclick="alert('No demo available')"><button class="btn project-btn"><i class="fa-solid fa-desktop green"></i> Demo</button></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="project-container">
+                    <div class="project-header">
+                        <img src="images/pokemon_searcher.jpg" alt="">
+                        <h3>Pokemon searcher</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Web app made with pokeAPI in order to practice fetch requests.</p>
+                        <div class="btn-container">
+                            <a href="https://github.com/robert1811/pokemon-searcher"><button class="btn project-btn"><i class="fa-brands fa-github green"></i> Github</button></a>
+                            <a href="https://pokemon-searcher-ruddy.vercel.app/"><button class="btn project-btn"><i class="fa-solid fa-desktop green"></i> Demo</button></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section style="margin-top: 70px" id="contact">
+            <h2>Contact me</h2>
+            <ul id="contact-options">
+                <li><a target="_blank" href="https://www.github.com/robert1811" class="fa-brands fa-github"></a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Designed by <a target="_blank" href="https://github.com/robert1811">robert1811</a></p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
